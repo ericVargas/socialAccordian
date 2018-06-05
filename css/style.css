@@ -11,8 +11,8 @@ body {
 
 @font-face {
     font-family: 'Genericons';
-    src: url('fonts/genericons-regular-webfont.woff')format('woff'),
-        url('fonts/genericons-regular-webfont.eot')format('truetype');
+    src: url('../fonts/genericons-regular-webfont.woff')format('woff'),
+        url('../fonts/genericons-regular-webfont.eot')format('truetype');
 }
 
 .container {
