@@ -26,12 +26,13 @@ header h1 {
     text-align: center;
 }
 
-.accordian {
+.accordion {
     background: #333;
     width: 100%;
     min-width: 800px;
     display: block;
-    list-style-type: hidden;
+    list-style-type: none;
+    overflow: hidden;
     height: 200px;
     font-size: 0;
 }
@@ -65,8 +66,8 @@ header h1 {
     width: 360px;
     height: 200px;
     margin-left: 80px;
-    position: relative;
     padding: 50px 0 0 15px;
+    position: relative;
 }
 
 .tab .content h1 {
@@ -156,6 +157,41 @@ header h1 {
     background-color: #6e5494;
 }
 
+@media (max-width: 950px) {
+    .container {
+        width: 70%;
+    }
+    
+    .tab {
+        display: block;
+        width: 100%;
+        border-bottom: 3px #333 solid;
+    }
+    
+    .accordion {
+        display: block;
+        min-width: 450px;
+        height: auto;
+    }
+    
+    .tab .content {
+        width: 85%;
+    }
+    
+    .tab:hover {
+        width: 100%;
+    }
+}
 
+@media (max-width 680px) {
+    .container {
+        width: 95%;
+    }
+    
+    .accordion {
+        width: 100%;
+        min-width: 350px;
+    }
+}
 
 
